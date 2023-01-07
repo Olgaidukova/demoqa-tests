@@ -8,8 +8,7 @@ import java.io.File;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class PracticeFormTests {
 
@@ -39,6 +38,9 @@ public class PracticeFormTests {
         //Actions
         open("/automation-practice-form");
         $(".main-header").shouldHave(text("Practice Form"));
+
+        executeJavaScript("$('#fixedban').remove()");
+        executeJavaScript("$('footer').remove()");
 
         $("#firstName").setValue(firstName);
         $("#lastName").setValue(lastName);
