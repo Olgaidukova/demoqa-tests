@@ -18,9 +18,9 @@ public class PracticeFormPage {
     private SelenideElement
             firstNameInput = $("#firstName"),
             lastNameInput = $("#lastName"),
-            EmailInput = $("#userEmail"),
-            Gender = $("#genterWrapper"),
-            NumberInput = $("#userNumber"),
+            emailInput = $("#userEmail"),
+            gender = $("#genterWrapper"),
+            numberInput = $("#userNumber"),
             userSubjectsInput = $("#subjectsInput"),
             userHobbiesChoice = $("#hobbiesWrapper"),
             pictureUpload = $("#uploadPicture"),
@@ -53,19 +53,19 @@ public class PracticeFormPage {
     }
 
     public PracticeFormPage setEmail(String value){
-        EmailInput.setValue(value);
+        emailInput.setValue(value);
 
         return this;
     }
 
     public PracticeFormPage setGender(String value){
-        Gender.$(byText(value)).click();
+        gender.$(byText(value)).click();
 
         return this;
     }
 
     public PracticeFormPage setNumber(String value){
-        NumberInput.setValue(value);
+        numberInput.setValue(value);
 
         return this;
     }
