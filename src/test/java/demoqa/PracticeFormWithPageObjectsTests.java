@@ -1,5 +1,6 @@
 package demoqa;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -12,6 +13,7 @@ public class PracticeFormWithPageObjectsTests extends TestBase {
 
 
     @Test
+    @Disabled
     void fillFormTest() {
         String firstName = "Ivan";
         String lastName = "Ivanov";

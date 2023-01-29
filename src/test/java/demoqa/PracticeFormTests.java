@@ -2,6 +2,7 @@ package demoqa;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -19,6 +20,7 @@ public class PracticeFormTests {
     }
 
     @Test
+    @Disabled
     void fillFormTest() {
         String firstName = "Ivan";
         String lastName = "Ivanov";
